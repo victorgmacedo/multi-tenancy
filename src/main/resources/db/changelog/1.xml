@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
+http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd">
+	<changeSet id="20210225-1" author="Victor Gabriel">
+		<createTable tableName="contato">
+			<column name="id" type="numeric">
+				<constraints primaryKey="true"
+					primaryKeyName="id" />
+			</column>
+			<column name="nome" type="varchar(250)">
+			</column>
+			<column name="telefone" type="varchar(20)">
+			</column>
+			<column name="email" type="varchar(50)">
+			</column>
+		</createTable>
+	</changeSet>
+</databaseChangeLog>
